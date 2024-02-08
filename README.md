@@ -1,0 +1,1 @@
+Small wrapper for the gnuplot-iostream library to integrate it with lbuild
