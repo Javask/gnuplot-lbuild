@@ -23,8 +23,8 @@ def prepare(module, options):
     return True
 
 def build(env):
+    env.collect("modm:build:path.include", "gnuplot-lbuild/src")
     env.outbasepath = "gnuplot-lbuild/src/gnuplot"
-    env.collect("modm:build:path.include", "gnuplot/src")
     env.collect("modm:build:library", "-lboost_iostreams")
     env.collect("modm:build:library", "-lboost_system")
     env.collect("modm:build:library", "-lboost_filesystem")
